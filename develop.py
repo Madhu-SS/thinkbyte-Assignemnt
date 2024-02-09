@@ -11,7 +11,7 @@ st.title("AI-Assisted Analysis of Renewable Energy Sector Trends")
 # text=st.text_input("Please enter your Querry")
 
 
-load_dotenv("g.env")
+load_dotenv()
 genai.configure(api_key=os.environ.get("GOOGLE_API_KEY"))
 
 llm = ChatGoogleGenerativeAI(model="gemini-pro")
